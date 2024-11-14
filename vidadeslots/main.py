@@ -22,7 +22,7 @@ with open(output_csv, mode="w", newline="") as csvfile:
 
             # Corrigir espaços na URL da imagem GITHUB
             encoded_image_file = urllib.parse.quote(image_file)
-            image_url = f'https://github.com/Lucas-Henrique-Lopes-Costa/personalziados/blob/main/images/{encoded_image_file}?raw=true'
+            image_url = f'https://github.com/Lucas-Henrique-Lopes-Costa/personalziados/blob/main/vidadeslots/images/{encoded_image_file}?raw=true'
 
             # URL da imagem trocando espaço por '-'
             # encoded_image_file = image_file.replace(" ", "-")
