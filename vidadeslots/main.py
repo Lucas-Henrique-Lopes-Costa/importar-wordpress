@@ -34,7 +34,7 @@ with open(output_csv, mode="w", newline="") as csvfile:
                     "nome-da-franquia": franchise_name,
                     "foto-da-franquia": image_url,
                     "link-google-maps": "#",
-                    "tipo": "jdb",
+                    "tipo": "hacksaw",
                 }
             )
 
