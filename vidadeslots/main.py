@@ -26,7 +26,7 @@ with open(output_csv, mode="w", newline="") as csvfile:
 
             # URL da imagem trocando espaço por '-'
             # encoded_image_file = image_file.replace(" ", "-")
-            # image_url = f"https://vidadeslots.secretogrupo.com/wp-content/uploads/2024/11/{encoded_image_file}"
+            # image_url = f"https://vidadeslots.secretogrupo.com/wp-content/uploads/2025/01/{encoded_image_file}"
 
             # Escrever dados na planilha CSV
             writer.writerow(
@@ -34,7 +34,7 @@ with open(output_csv, mode="w", newline="") as csvfile:
                     "nome-da-franquia": franchise_name,
                     "foto-da-franquia": image_url,
                     "link-google-maps": "#",
-                    "tipo": "pg",
+                    "tipo": "pp",
                 }
             )
 
