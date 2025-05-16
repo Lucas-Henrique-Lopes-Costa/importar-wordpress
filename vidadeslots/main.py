@@ -21,12 +21,12 @@ with open(output_csv, mode="w", newline="") as csvfile:
             franchise_name = os.path.splitext(image_file)[0]
 
             # Corrigir espaços na URL da imagem GITHUB
-            encoded_image_file = urllib.parse.quote(image_file)
-            image_url = f'https://github.com/Lucas-Henrique-Lopes-Costa/personalziados/blob/main/vidadeslots/images/{encoded_image_file}?raw=true'
+            # encoded_image_file = urllib.parse.quote(image_file)
+            # image_url = f'https://github.com/Lucas-Henrique-Lopes-Costa/personalziados/blob/main/vidadeslots/images/{encoded_image_file}?raw=true'
 
             # URL da imagem trocando espaço por '-'
-            # encoded_image_file = image_file.replace(" ", "-")
-            # image_url = f"https://vidadeslots.secretogrupo.com/wp-content/uploads/2025/02/{encoded_image_file}"
+            encoded_image_file = image_file.replace(" ", "%20")
+            image_url = f"https://vidadeslots.secretogrupo.com/wp-content/uploads/2025/15-05/{encoded_image_file}"
 
             # Escrever dados na planilha CSV
             writer.writerow(
