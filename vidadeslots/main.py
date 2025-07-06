@@ -42,7 +42,7 @@ with open(output_csv, mode="w", newline="") as csvfile:
 
                 # URL da imagem trocando espaço por '-'
                 # encoded_image_file = image_file.replace(" ", "%20")
-                # image_url = f"https://vidadeslots.secretogrupo.com/wp-content/uploads/2025/15-05/{encoded_image_file}"
+                # image_url = f"https://vidadeslots.secretogrupo.com/wp-content/uploads/2025/06-07/{encoded_image_file}"
 
                 writer.writerow(
                     {
