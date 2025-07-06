@@ -35,9 +35,14 @@ with open(output_csv, mode="w", newline="") as csvfile:
 
                 franchise_name = os.path.splitext(image_file)[0]
                 encoded_image_file = urllib.parse.quote(image_file)
+                
                 # Monta a URL usando a estrutura de pasta correta
-                relative_folder = os.path.relpath(root, image_folder_path)
-                image_url = f"https://github.com/Lucas-Henrique-Lopes-Costa/personalziados/blob/main/vidadeslots/images/{urllib.parse.quote(relative_folder)}/{encoded_image_file}?raw=true"
+                # relative_folder = os.path.relpath(root, image_folder_path)
+                # image_url = f"https://github.com/Lucas-Henrique-Lopes-Costa/personalziados/blob/main/vidadeslots/images/{urllib.parse.quote(relative_folder)}/{encoded_image_file}?raw=true"
+
+                # URL da imagem trocando espaço por '-'
+                encoded_image_file = image_file.replace(" ", "-")
+                image_url = f"https://vidadeslots.secretogrupo.com/wp-content/uploads/2025/07/{encoded_image_file}"
 
                 writer.writerow(
                     {
